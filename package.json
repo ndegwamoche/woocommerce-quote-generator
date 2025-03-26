@@ -1,0 +1,23 @@
+{
+  "name": "woocommerce-quote-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build src/index.js",
+    "start": "wp-scripts start src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "react-bootstrap": "^2.10.9",
+    "react-bootstrap-icons": "^1.11.5",
+    "react-phone-input-2": "^2.15.1"
+  }
+}
