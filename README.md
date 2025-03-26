@@ -1,5 +1,9 @@
 # WooCommerce Quote Generator
 
+**Version:** 1.0  
+**Author:** [Martin Ndegwa Moche](https://www.linkedin.com/in/ndegwamoche/)  
+**Description:** This  is a WordPress plugin that allows users to generate product quotes within a WooCommerce store using a simple shortcode [woocommerce-quote-generator]. It integrates React and PHP to provide a seamless quoting experience.
+
 ## **Overview**
 WooCommerce Quote Generator is a WordPress plugin that enables customers to request quotes for products in a WooCommerce-powered store. It seamlessly integrates React and PHP, offering an interactive quoting experience via the `[woocommerce-quote-generator]` shortcode.
 
@@ -9,6 +13,33 @@ WooCommerce Quote Generator is a WordPress plugin that enables customers to requ
 - **WooCommerce Compatibility**: Fully integrates with WooCommerce, ensuring smooth product selection and quote requests.
 - **Custom Thank You Page Handling**: Uses custom rewrite rules to manage quote submission redirects.
 - **AJAX & Nonce Security**: Implements AJAX-based operations with nonce verification for security.
+
+----------
+
+## File Structure
+```
+woocommerce-quote-generator/
+│
+├── build/
+│ ├── index.js # Compiled React components
+│ ├── index.asset.php # Asset dependencies
+│
+├── includes/
+│ ├── class-quote-generator-api.php # Handles admin interface
+│ ├── class-quote-generator.php # Handles AJAX requests
+│
+├── src/
+│ ├── components/
+│ │ ├── CartSummary.js # React component for the admin form
+│ │ ├── CheckoutForm.js # React component for video lists
+│ ├── App.js # Main React app entry
+│ ├── index.js # React app renderer
+│
+├── woocommerce-quote-generator.php # Main plugin file
+├── package.json # Node.js dependencies
+└── README.md
+```
+----------
 
 ## **Installation**
 1. Download the plugin and upload it to your WordPress site.
